@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registre en HTML</title>
+</head>
+<body>
+    <h1><strong>Exercici, formulari de registre</strong></h1>
+
+    <form action="registre.html" method="get">   
+    <div>
+        <label for="idNom">Nom:</label>
+        <input type="text" id="idNom" name="nom" required>
+        <label for="idLLinages">Llinatges:</label>
+        <input type="text" id="idLLinages" name="llinatges" required>
+    </div>
+
+    <div>
+        <label for="idHome">Home:</label>
+        <input name="genere" type="radio" value="masculi" id="idHome"required >
+        <label for="idDona">Dona:</label>
+        <input name="genere" type="radio" value="femeni" id="idDona"required >
+        <label for="idAltre">Altre:</label>
+        <input name="genere" type="radio" value="altre" id="idAltre"required >
+    </div>
+    
+    <div>
+        <label for="idEmail">Email:</label>
+        <input type="email" name="email" id="idEmail" placeholder="El teu mail" required>
+        <label for="idPassword">Contrasenya:</label>
+        <input type="password" name="password" id="idPassword" minlength="5" maxlength="10" required>
+    </div>
+
+    <div>
+        <label for="idDate">Data de Naixement:</label>
+        <input type="date" name="data" id="idDate" required>
+    </div>
+
+    <div>
+        <label for="idCheckbox">Estic d'acord amb els termes i condicions</label>
+        <input type="checkbox" name="checkbox" id="idCheckbox" required>
+    </div>
+    <div>
+        <button>submit</button>
+    </div>
+</form>
+    
+</body>
+</html>
